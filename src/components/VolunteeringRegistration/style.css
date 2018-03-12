@@ -1,0 +1,12 @@
+.form-check {
+  padding-bottom: 10px;
+}
+
+
+.volunteering-option label {
+  font-weight: bold;
+}
+
+.form-check div.details {
+  font-style: italic;
+}

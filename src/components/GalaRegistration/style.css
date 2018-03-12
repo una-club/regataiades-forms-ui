@@ -1,0 +1,11 @@
+.menu .form-check {
+  margin-bottom: 15px;
+}
+
+.menu label {
+  font-weight: bold;
+}
+
+.menu .form-check div.details {
+  font-style: italic;
+}

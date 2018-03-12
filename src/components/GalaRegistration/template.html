@@ -1,0 +1,79 @@
+<div>
+  <h1>{{ $t("message.galaRegistration.title") }}</h1>
+
+  <b-container fluid>
+    <b-row>
+      <b-col sm="4"><label class="required">{{ $t('message.galaRegistration.forms.name') }}</label></b-col>
+      <b-col sm="8">
+        <b-form-input type="text" v-model="formContent.name" :placeholder="$t('message.galaRegistration.forms.name')"></b-form-input>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col sm="4"><label class="required">{{ $t('message.galaRegistration.forms.mail') }}</label></b-col>
+      <b-col sm="8">
+        <b-form-input type="text" v-model="formContent.mail" :placeholder="$t('message.galaRegistration.forms.mail')"></b-form-input>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col sm="4"><label class="required">{{ $t('message.galaRegistration.forms.phone') }}</label></b-col>
+      <b-col sm="8">
+        <b-form-input type="text" v-model="formContent.phone" :placeholder="$t('message.galaRegistration.forms.phone')"></b-form-input>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col sm="4"><label class="required">{{ $t('message.galaRegistration.forms.team') }}</label></b-col>
+      <b-col sm="8">
+        <b-form-input type="text" v-model="formContent.team" :placeholder="$t('message.galaRegistration.forms.team')"></b-form-input>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col sm="12">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" v-model="formContent.withGuest" value="1"> {{ $t('message.galaRegistration.forms.withGuest') }}
+          </label>
+        </div>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col sm="12">
+        <h3>{{$t('message.galaRegistration.forms.menuChoice')}}</h3>
+      </b-col>
+    </b-row>
+    <b-row class="menu" v-for="n in getGuestNumber()">
+      <b-col sm="4">
+        <h4>{{$t('message.galaRegistration.forms.starter')}}</h4>
+        <div class="form-check" v-for="(option, index) in options.starter">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" v-model="formContent.menu[n-1].starter" :value="option.value"> {{ $t('message.galaRegistration.forms.starterOptions.' + option.value + '.title') }}
+          </label><div class="details">{{ $t('message.galaRegistration.forms.starterOptions.' + option.value + '.details') }}</div>
+        </div>
+      </b-col>
+      <b-col sm="4">
+        <h4>{{$t('message.galaRegistration.forms.entree')}}</h4>
+        <div class="form-check" v-for="(option, index) in options.entree">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" v-model="formContent.menu[n-1].entree" :value="option.value"> {{ $t('message.galaRegistration.forms.entreeOptions.' + option.value + '.title') }}
+          </label><div class="details">{{ $t('message.galaRegistration.forms.entreeOptions.' + option.value + '.details') }}</div>
+        </div>
+      </b-col>
+      <b-col sm="4">
+        <h4>{{$t('message.galaRegistration.forms.dessert')}}</h4>
+        <div class="form-check" v-for="(option, index) in options.dessert">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" v-model="formContent.menu[n-1].dessert" :value="option.value"> {{ $t('message.galaRegistration.forms.dessertOptions.' + option.value + '.title') }}
+          </label><div class="details">{{ $t('message.galaRegistration.forms.dessertOptions.' + option.value + '.details') }}</div>
+        </div>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col sm="12" class="submit">
+         <b-button :disabled="!isFormValid()" variant="success">{{ $t('message.galaRegistration.forms.submit') }}</b-button>
+      </b-col>
+    </b-row>
+  </b-container>
+  <div class="sponsor">
+    <h3>{{ $t("message.galaRegistration.sponsor") }}</h3>
+    <a href="http://www.kenstal.fr/" target="_blank"><img src="../../assets/kenstal-full.jpg"></a>
+  </div>
+</div>

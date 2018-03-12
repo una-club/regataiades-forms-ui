@@ -1,0 +1,62 @@
+<div>
+  <h1>{{ $t("message.mealsBooking.title") }}</h1>
+  <b-container fluid>
+    <b-row>
+      <b-col sm="4"><label class="required">{{ $t('message.mealsBooking.forms.name') }}</label></b-col>
+      <b-col sm="8">
+        <b-form-input type="text" v-model="formContent.name" :placeholder="$t('message.mealsBooking.forms.name')"></b-form-input>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col sm="4"><label class="required">{{ $t('message.mealsBooking.forms.phone') }}</label></b-col>
+      <b-col sm="8">
+        <b-form-input type="text" v-model="formContent.phone" :placeholder="$t('message.mealsBooking.forms.phone')"></b-form-input>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col sm="4"><label class="required">{{ $t('message.mealsBooking.forms.mail') }}</label></b-col>
+      <b-col sm="8">
+        <b-form-input type="text" v-model="formContent.mail" :placeholder="$t('message.mealsBooking.forms.mail')"></b-form-input>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col sm="4"><label class="required">{{ $t('message.mealsBooking.forms.team') }}</label></b-col>
+      <b-col sm="8">
+        <b-form-input type="text" v-model="formContent.team" :placeholder="$t('message.mealsBooking.forms.team')"></b-form-input>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col sm="4">
+        <h4 class="required">{{$t('message.mealsBooking.forms.saturdayLunch')}}</h4>
+        <b-form-input type="number" v-model="formContent.saturdayLunch" :placeholder="$t('message.mealsBooking.forms.quantity')"></b-form-input>
+      </b-col>
+      <b-col sm="4">
+        <h4 class="required">{{$t('message.mealsBooking.forms.saturdayDinner')}}</h4>
+        <b-form-input type="number" v-model="formContent.saturdayDinner" :placeholder="$t('message.mealsBooking.forms.quantity')"></b-form-input>
+      </b-col>
+      <b-col sm="4">
+        <h4 class="required">{{$t('message.mealsBooking.forms.sundayLunch')}}</h4>
+        <b-form-input type="number" v-model="formContent.sundayLunch" :placeholder="$t('message.mealsBooking.forms.quantity')"></b-form-input>
+      </b-col>
+    </b-row>
+
+    <b-row class="total">
+      <b-col sm="12"><h3>{{ $t('message.mealsBooking.forms.total') }} : {{getTotal()}} €</h3></b-col>
+    </b-row>
+
+    <b-row>
+      <b-col sm="12" class="submit">
+         <b-button :disabled="!isFormValid()" variant="success">{{ $t('message.mealsBooking.forms.submit') }}</b-button>
+      </b-col>
+    </b-row>
+
+    <b-row>
+      <b-col sm="12">
+        <div class="sponsor">
+          <h3>{{ $t("message.mealsBooking.sponsor") }}</h3>
+          <a href="http://www.crous-nantes.fr/restauration/" target="_blank"><img src="../../assets/crous-logo.jpg"></a>
+        </div>
+      </b-col>
+    </b-row>
+  </b-container>
+</div>
