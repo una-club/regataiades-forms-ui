@@ -20,7 +20,7 @@ server.get('*', (req, res) => {
         //context to use as data source
         //in the template for interpolation
         const context = {
-            title: 'Regataiades Internationales De Nantes - Forms',
+            title: 'Regataiades Internationales De Nantes - Registration',
             meta: `
                 <meta description="Regataiades Internationales De Nantes - Forms">
             `
