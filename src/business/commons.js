@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 const config = {
-  'url' : 'http://service.regataiades.fr/'
+  'url' : 'http://service.regataiades.fr'
 }
 
 export function saveData(service, data) {
