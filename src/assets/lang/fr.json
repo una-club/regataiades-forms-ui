@@ -1,14 +1,22 @@
 {
   "message": {
+    "page": {
+      "title": "Régate Universitaire Internationale d'Aviron",
+      "subtitle": "XXXIV Edition",
+      "date": "Nantes, 5 et 6 Mai 2018",
+      "stayConnected": "Restez connectés"
+    },
     "menu": {
       "galaRegistration": "Repas des officiels",
       "teamsRegistration": "Inscription à la régate",
       "mealsBooking": "Repas du week-end",
-      "volunteeringRegistration": "Bénévolat"
+      "volunteeringRegistration": "Bénévolat",
+      "changeLanguage": "In English"
     },
     "galaRegistration": {
       "title": "Inscription aux repas des officiels",
       "sponsor": "Fourni par Kenstal",
+      "info": "Evènement par invitation seulement",
       "forms": {
         "name": "Nom, Prénom",
         "phone": "Téléphone",
@@ -30,7 +38,7 @@
         },
         "dessertOptions": {
           "chocolate": {"title": "Croquant framboise chocolat", "details": ""},
-          "none": {"title": "Aucun", "details": ""}
+          "ananas": {"title": "Ananas Caramel au beurre salé", "details": ""}
         },
         "submit": "S'inscrire"
       }, 
