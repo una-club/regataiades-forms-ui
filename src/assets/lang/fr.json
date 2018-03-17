@@ -1,7 +1,5 @@
 {
   "message": {
-    "hello": "Salut",
-    "check": "viens voir",
     "menu": {
       "galaRegistration": "Repas des officiels",
       "teamsRegistration": "Inscription à la régate",
@@ -21,6 +19,7 @@
         "starter": "Entrée",
         "entree": "Plat principal",
         "dessert": "Dessert",
+        "total": "Total",
         "starterOptions": {
           "foiegras": {"title": "Tranche de foie gras", "details": ""},
           "eggplant": {"title": "Caviar d'aubergine", "details": "Végétarien"}
@@ -34,7 +33,9 @@
           "none": {"title": "Aucun", "details": ""}
         },
         "submit": "S'inscrire"
-      }
+      }, 
+      "submitted": "Vos choix ont bien été pris en compte.",
+      "pay": "Vous pouvez maintenant passer au réglement de {total} € <a href=\"{link}\" target=\"_blank\">en ligne</a>, ou bien nous faire un virement au 14445 004000 08101180019 13 (UNA / Caisse d'Epargne, Bretagne / Pays de la Loire)"
     },
     "mealsBooking": {
       "title": "Reservation des repas",
@@ -50,7 +51,10 @@
         "sundayLunch": "Dimanche Soir",
         "total": "Total",
         "submit": "Reserver"
-      }
+      }, 
+      "submitted": "Merci pour la reservation ! ",
+      "pay": "Vous pouvez passer au réglement de {total} € <a href=\"{link}\" target=\"_blank\">en ligne</a>, ou bien nous faire un virement au 14445 004000 08101180019 13 (UNA / Caisse d'Epargne, Bretagne / Pays de la Loire)",
+      "paymentLink": ""
     },
     "teamsRegistration": {
       "title": "Inscription des équipages",
@@ -91,7 +95,8 @@
           "licence": "Numéro de licence",
           "noLicence": "Pas licencié"
         }
-      }
+      }, 
+      "submitted": "Merci pour l'inscription ! On va revenir vers vous rapidement avec les détails de reglement !"
     },
     "volunteeringRegistration": {
       "title": "Inscription au bénévolat",
@@ -118,7 +123,7 @@
           "boat" : "Permis Bateau"
         },
         "availabilitiesOptions": "Disponibilités",
-        "availabilitiesDetails": "Nous avons besoins de vous pendant l'évènement, mais aussi avant et après l'évenement",
+        "availabilitiesDetails": "Nous avons besoin de vous pendant l'évènement, mais aussi avant et après l'évenement",
         "availabilities": {
           "before": "Avant l'évènement (entre 1-4 mai)",
           "fridayNight": "Vendredi soir",
@@ -131,7 +136,8 @@
         },
         "comment": "Commentaires",
         "submit": "S'inscrire"
-      }
+      }, 
+      "submitted": "Merci d'être inscrit ! On va revenir vers vous rapidement !"
     }
 
   }

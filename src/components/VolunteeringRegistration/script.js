@@ -1,8 +1,13 @@
+import { saveData } from '../../business/commons.js'
+
+const service = 'registration/volunteers'
+
 export default {
   name: 'VolunteeringRegistration',
 
   data () {
     return {
+      submitted: false,
       formContent: {
         licences: [],
         volunteering: [],
@@ -43,7 +48,13 @@ export default {
   },
   methods: {
     isFormValid () {
-      return false
+      return this.$data.formContent.mail && this.$data.formContent.name && this.$data.formContent.phone;
+    },
+    submit () {
+      let that = this
+      if (this.isFormValid()) {
+        saveData(service, this.$data.formContent).then((response) => { console.log(response); console.log(that.$data); that.$data.submitted = response.data; })
+      }
     }
   }
 }

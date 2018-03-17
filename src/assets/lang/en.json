@@ -1,6 +1,136 @@
 {
   "message": {
-    "hello": "hello world",
-    "check": "Check this out"
+    "menu": {
+      "galaRegistration": "Gala Party",
+      "teamsRegistration": "Regatta Registration",
+      "mealsBooking": "Week-end Meals",
+      "volunteeringRegistration": "Volunteering"
+    },
+    "galaRegistration": {
+      "title": "Inscription aux repas des officiels",
+      "sponsor": "Fourni par Kenstal",
+      "forms": {
+        "name": "Nom, Prénom",
+        "phone": "Téléphone",
+        "mail": "E-mail",
+        "team": "Equipe / Délégation",
+        "withGuest": "Accompagné",
+        "menuChoice": "A la carte",
+        "starter": "Entrée",
+        "entree": "Plat principal",
+        "dessert": "Dessert",
+        "starterOptions": {
+          "foiegras": {"title": "Tranche de foie gras", "details": ""},
+          "eggplant": {"title": "Caviar d'aubergine", "details": "Végétarien"}
+        },
+        "entreeOptions": {
+          "porc": {"title": "Filet mignon de porc sauce miel et moutarde à l'ancienne", "details": "Pommes de terre grenaille et haricots verts"},
+          "crumble": {"title": "Crumble tomate pesto et son quinoa crémeux", "details": "Végétarien"}
+        },
+        "dessertOptions": {
+          "chocolate": {"title": "Croquant framboise chocolat", "details": ""},
+          "none": {"title": "Aucun", "details": ""}
+        },
+        "submit": "S'inscrire"
+      }
+    },
+    "mealsBooking": {
+      "title": "Reservation des repas",
+      "sponsor": "Fourni par CROUS",
+      "forms": {
+        "name": "Nom, Prénom",
+        "phone": "Téléphone",
+        "mail": "E-mail",
+        "team": "Equipe / Délégation",
+        "quantity": "Quantité",
+        "saturdayLunch": "Samedi Midi",
+        "saturdayDinner": "Samedi Soir",
+        "sundayLunch": "Dimanche Soir",
+        "total": "Total",
+        "submit": "Reserver"
+      }
+    },
+    "teamsRegistration": {
+      "title": "Inscription des équipages",
+      "forms": {
+        "quantity": "Nombre",
+        "submit": "S'inscrire",
+        "section": {
+          "boats": "Equipages",
+          "club": "Identifants du club",
+          "contact": "Personne de contact",
+          "coaches": "Entraineurs, accompagnateurs",
+          "composition": "Composition des équipages"
+        },
+        "club": {
+          "name": "Nom du club",
+          "address": "Adresse",
+          "link": "Lien (Site web, FB, Twitter...)",
+          "mail": "Mail du club"
+        },
+        "contact": {
+          "name": "Nom, Prénom",
+          "phone": "Téléphone",
+          "mail": "E-Mail"
+        },
+        "boats": {
+          "uniEight": "8+ Univ",
+          "uniQuad": "4x Univ",
+          "masterQuad": "4x Vétéran",
+          "masterFour": "4+ Vétéran (hommes)"
+        },
+        "composition": {
+          "name": "Nom, Prénom",
+          "birthdate": "jj/mm/aaaa",
+          "sex": {
+            "f": "F",
+            "m": "H"
+          },
+          "licence": "Numéro de licence",
+          "noLicence": "Pas licencié"
+        }
+      }
+    },
+    "volunteeringRegistration": {
+      "title": "Inscription au bénévolat",
+      "forms": {
+        "name": "Nom, Prénom",
+        "phone": "Téléphone",
+        "mail": "E-mail",
+        "volunteeringOptions": "Préférences d'équipes",
+        "volunteering": {
+          "hosting": {"title": "Accueil", "details": "Permanences au club vendredi, samedi et dimanche pour les renseignements et l'aide aux équipages. Anglais est un plus."},
+          "food": {"title": "Restauration", "details": "Gestion et service au stand de Restauration"},
+          "waterInstallation": {"title": "Installation/désinstallation des lignes d'eau", "details": "Lourde (mais très intéressante) tâche repartie sur la semaine avant le 5 mai, samedi soir et lundi 7 mai"},
+          "party": {"title": "Organisation de la soirée", "details": "Toutes les activités relatives à l'organisation et déroulement de la soirée de samedi"},
+          "onSite": {"title": "Stand du club", "details": "Animation du stand du club au village de la régate"},
+          "communityManager": {"title": "Communication", "details": "Publications en continu sur les réseaux sociaux de l'évènement et du club"},
+          "onWaterSecurity": {"title": "Sécurité sur l'eau", "details": "Gestion de navigation sur l'eau et du trafic sur le ponton"},
+          "driver": {"title": "Conducteur de navette", "details": "Chauffeur de la navette entre le lieu de la régate et le club et éventuellement Sam samedi soir"},
+          "launchDriver": {"title": "Pilote d'arbitres", "details": "Meilleure place pour assister aux courses"}
+        },
+        "licencesOptions": "Permis détenus",
+        "licencesDetails": "Connaitre vos compétences nous permettra de vous trouver le poste le plus adapté",
+        "licences": {
+          "driver": "Permis B (ou plus)",
+          "boat" : "Permis Bateau"
+        },
+        "availabilitiesOptions": "Disponibilités",
+        "availabilitiesDetails": "Nous avons besoins de vous pendant l'évènement, mais aussi avant et après l'évenement",
+        "availabilities": {
+          "before": "Avant l'évènement (entre 1-4 mai)",
+          "fridayNight": "Vendredi soir",
+          "saturdayMorning": "Samedi matin (6h-13h)",
+          "saturdayAfternoon": "Samedi après-midi (12h30-18h30)",
+          "satudrayNight": "Samedi soir (19h-2h)",
+          "sundayMorning": "Dimanche matin (6h-13h)",
+          "sundayAfternoon": "Dimanche après-midi (12h30-18h30)",
+          "after": "Après l'évènement (7-8 mai)"
+        },
+        "comment": "Commentaires",
+        "submit": "S'inscrire"
+      }
+    }
+
   }
 }

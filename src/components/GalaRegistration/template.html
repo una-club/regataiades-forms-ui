@@ -1,7 +1,18 @@
 <div>
   <h1>{{ $t("message.galaRegistration.title") }}</h1>
-
-  <b-container fluid>
+  <b-container fluid v-if="submitted">
+    
+    <b-row>
+      <b-col sm="12"><b-alert show>{{ $t('message.galaRegistration.submitted') }}</b-alert></b-col>
+    </b-row>
+    <b-row>
+      
+      <b-row>
+        <b-col sm="12" v-html="$t('message.galaRegistration.pay', {'total': getTotal(), 'link': 'https://www.helloasso.com/associations/universite-de-nantes-aviron/evenements/regataiades-de-nantes-repas-des-officiels'})"></b-col>
+      </b-row>
+    </b-row>
+  </b-container>
+  <b-container fluid v-if="!submitted">
     <b-row>
       <b-col sm="4"><label class="required">{{ $t('message.galaRegistration.forms.name') }}</label></b-col>
       <b-col sm="8">
@@ -66,9 +77,14 @@
         </div>
       </b-col>
     </b-row>
+    
+    <b-row class="total">
+      <b-col sm="12"><h3>{{ $t('message.galaRegistration.forms.total') }} : {{getTotal()}} €</h3></b-col>
+    </b-row>
+
     <b-row>
       <b-col sm="12" class="submit">
-         <b-button :disabled="!isFormValid()" variant="success">{{ $t('message.galaRegistration.forms.submit') }}</b-button>
+         <b-button :disabled="!isFormValid()" @click="submit()" variant="success">{{ $t('message.galaRegistration.forms.submit') }}</b-button>
       </b-col>
     </b-row>
   </b-container>

@@ -1,4 +1,8 @@
-const price = 10.0
+import { saveData } from '../../business/commons.js'
+
+const price = 15.0
+
+const service = 'registration/teams'
 
 const crewsMapping = {
   'uniEight': 9,
@@ -18,7 +22,8 @@ export default {
         contact: {},
         boats: {},
         composition: {}
-      }
+      },
+      submitted: false
     }
   },
   mounted () {
@@ -73,7 +78,14 @@ export default {
       return total
     },
     isFormValid () {
-      return false
+      return this.$data.formContent.club.name && this.$data.formContent.club.address && this.$data.formContent.club.link && this.$data.formContent.contact.name && this.$data.formContent.contact.mail && this.$data.formContent.contact.phone && (this.$data.formContent.boats.uniEight || this.$data.formContent.boats.uniQuad || this.$data.formContent.boats.masterFour || this.$data.formContent.boats.masterQuad);
+    },
+    submit () {
+      this.$forceUpdate()
+      let that = this
+      if (this.isFormValid()) {
+        saveData(service, this.$data.formContent).then((response) => { console.log(response); console.log(that.$data); that.$data.submitted = response.data; })
+      }
     }
   }
 }

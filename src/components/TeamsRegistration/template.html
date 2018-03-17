@@ -1,6 +1,11 @@
 <div>
   <h1>{{ $t("message.teamsRegistration.title") }}</h1>
-  <b-container fluid>
+  <b-container fluid v-if="submitted">
+    <b-row>
+      <b-col sm="12"><b-alert show>{{ $t('message.teamsRegistration.submitted') }}</b-alert></b-col>
+    </b-row>
+  </b-container>
+  <b-container fluid v-if="!submitted">
     <b-row>
       <b-col sm="12"><h2>{{ $t('message.teamsRegistration.forms.section.club') }}</h2></b-col>
     </b-row>
@@ -23,7 +28,7 @@
       </b-col>
     </b-row>
     <b-row>
-      <b-col sm="4"><label class="required">{{ $t('message.teamsRegistration.forms.club.mail') }}</label></b-col>
+      <b-col sm="4"><label>{{ $t('message.teamsRegistration.forms.club.mail') }}</label></b-col>
       <b-col sm="8">
         <b-form-input type="text" v-model="formContent.club.mail" :placeholder="$t('message.teamsRegistration.forms.club.mail')"></b-form-input>
       </b-col>
@@ -63,19 +68,19 @@
     </b-row>
     <b-row>
       <b-col sm="3">
-        <h4 class="required">{{$t('message.teamsRegistration.forms.boats.uniEight')}}</h4>
+        <h4 class="expected">{{$t('message.teamsRegistration.forms.boats.uniEight')}}</h4>
         <b-form-input type="number" v-model="formContent.boats.uniEight" @change="updateCrews('uniEight')" :placeholder="$t('message.teamsRegistration.forms.quantity')"></b-form-input>
       </b-col>
       <b-col sm="3">
-        <h4 class="required">{{$t('message.teamsRegistration.forms.boats.uniQuad')}}</h4>
+        <h4 class="expected">{{$t('message.teamsRegistration.forms.boats.uniQuad')}}</h4>
         <b-form-input type="number" v-model="formContent.boats.uniQuad" @change="updateCrews('uniQuad')" :placeholder="$t('message.teamsRegistration.forms.quantity')"></b-form-input>
       </b-col>
       <b-col sm="3">
-        <h4 class="required">{{$t('message.teamsRegistration.forms.boats.masterQuad')}}</h4>
+        <h4 class="expected">{{$t('message.teamsRegistration.forms.boats.masterQuad')}}</h4>
         <b-form-input type="number" v-model="formContent.boats.masterQuad" @change="updateCrews('masterQuad')" :placeholder="$t('message.teamsRegistration.forms.quantity')"></b-form-input>
       </b-col>
       <b-col sm="3">
-        <h4 class="required">{{$t('message.teamsRegistration.forms.boats.masterFour')}}</h4>
+        <h4 class="expected">{{$t('message.teamsRegistration.forms.boats.masterFour')}}</h4>
         <b-form-input type="number" v-model="formContent.boats.masterFour" @change="updateCrews('masterFour')" :placeholder="$t('message.teamsRegistration.forms.quantity')"></b-form-input>
       </b-col>
     </b-row>
@@ -126,10 +131,8 @@
     </b-row>
     <b-row>
       <b-col sm="12" class="submit">
-         <b-button :disabled="!isFormValid()" variant="success">{{ $t('message.galaRegistration.forms.submit') }}</b-button>
+         <b-button :disabled="!isFormValid()" @click="submit()" variant="success">{{ $t('message.galaRegistration.forms.submit') }}</b-button>
       </b-col>
     </b-row>
-
-    <pre class="mt-3">{{ formContent }}</pre>
   </b-container>
 </div>

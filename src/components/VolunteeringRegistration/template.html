@@ -1,20 +1,23 @@
 <div>
   <h1>{{ $t("message.volunteeringRegistration.title") }}</h1>
-  <b-container fluid>
+  <b-container fluid v-if="submitted">
+    <b-alert variant="success" show>{{ $t('message.volunteeringRegistration.submitted') }}</b-alert>
+  </b-container>
+  <b-container fluid v-if="!submitted">
     <b-row>
-      <b-col sm="4"><label>{{ $t('message.volunteeringRegistration.forms.name') }}</label></b-col>
+      <b-col sm="4"><label class="required">{{ $t('message.volunteeringRegistration.forms.name') }}</label></b-col>
       <b-col sm="8">
         <b-form-input type="text" v-model="formContent.name" :placeholder="$t('message.volunteeringRegistration.forms.name')"></b-form-input>
       </b-col>
     </b-row>
     <b-row>
-      <b-col sm="4"><label>{{ $t('message.volunteeringRegistration.forms.mail') }}</label></b-col>
+      <b-col sm="4"><label class="required">{{ $t('message.volunteeringRegistration.forms.mail') }}</label></b-col>
       <b-col sm="8">
         <b-form-input type="text" v-model="formContent.mail" :placeholder="$t('message.volunteeringRegistration.forms.mail')"></b-form-input>
       </b-col>
     </b-row>
     <b-row>
-      <b-col sm="4"><label>{{ $t('message.volunteeringRegistration.forms.phone') }}</label></b-col>
+      <b-col sm="4"><label class="required">{{ $t('message.volunteeringRegistration.forms.phone') }}</label></b-col>
       <b-col sm="8">
         <b-form-input type="text" v-model="formContent.phone" :placeholder="$t('message.volunteeringRegistration.forms.phone')"></b-form-input>
       </b-col>
@@ -64,7 +67,7 @@
     </b-row>
     <b-row>
       <b-col sm="12" class="submit">
-         <b-button :disabled="!isFormValid()" variant="success">{{ $t('message.volunteeringRegistration.forms.submit') }}</b-button>
+         <b-button :disabled="!isFormValid()" @click="submit()" variant="success">{{ $t('message.volunteeringRegistration.forms.submit') }}</b-button>
       </b-col>
     </b-row>
 
