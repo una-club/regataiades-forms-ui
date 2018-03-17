@@ -6,13 +6,15 @@
       <b-col sm="12"><b-alert show>{{ $t('message.galaRegistration.submitted') }}</b-alert></b-col>
     </b-row>
     <b-row>
-      
       <b-row>
         <b-col sm="12" v-html="$t('message.galaRegistration.pay', {'total': getTotal(), 'link': 'https://www.helloasso.com/associations/universite-de-nantes-aviron/evenements/regataiades-de-nantes-repas-des-officiels'})"></b-col>
       </b-row>
     </b-row>
   </b-container>
   <b-container fluid v-if="!submitted">
+    <b-row>
+      <b-col sm="12"><b-alert show>{{ $t('message.galaRegistration.info') }}</b-alert></b-col>
+    </b-row>
     <b-row>
       <b-col sm="4"><label class="required">{{ $t('message.galaRegistration.forms.name') }}</label></b-col>
       <b-col sm="8">
