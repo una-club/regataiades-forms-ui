@@ -1,136 +1,150 @@
 {
   "message": {
+    "page": {
+      "title": "International University Rowing Regatta",
+      "subtitle": "XXXIV Edition",
+      "date": "Nantes, Mai 5th and 6th 2018",
+      "stayConnected": "Stay connected"
+    },
     "menu": {
       "galaRegistration": "Gala Party",
       "teamsRegistration": "Regatta Registration",
       "mealsBooking": "Week-end Meals",
-      "volunteeringRegistration": "Volunteering"
+      "volunteeringRegistration": "Volunteering",
+      "changeLanguage": "En français"
     },
     "galaRegistration": {
-      "title": "Inscription aux repas des officiels",
-      "sponsor": "Fourni par Kenstal",
+      "title": "Gala Dinner Registration",
+      "sponsor": "Provided by Kenstal",
+      "info": "Special event on invitation only",
       "forms": {
-        "name": "Nom, Prénom",
-        "phone": "Téléphone",
-        "mail": "E-mail",
-        "team": "Equipe / Délégation",
-        "withGuest": "Accompagné",
-        "menuChoice": "A la carte",
-        "starter": "Entrée",
-        "entree": "Plat principal",
+        "name": "First name, last name",
+        "phone": "Phone",
+        "mail": "Mail",
+        "team": "Team",
+        "withGuest": "With guest",
+        "menuChoice": "Menu",
+        "starter": "Starter",
+        "entree": "Entree",
         "dessert": "Dessert",
+        "total": "Total",
         "starterOptions": {
-          "foiegras": {"title": "Tranche de foie gras", "details": ""},
-          "eggplant": {"title": "Caviar d'aubergine", "details": "Végétarien"}
+          "foiegras": {"title": "Foie gras", "details": ""},
+          "eggplant": {"title": "Eggplant appetizer", "details": "Vegetarian"}
         },
         "entreeOptions": {
-          "porc": {"title": "Filet mignon de porc sauce miel et moutarde à l'ancienne", "details": "Pommes de terre grenaille et haricots verts"},
-          "crumble": {"title": "Crumble tomate pesto et son quinoa crémeux", "details": "Végétarien"}
+          "porc": {"title": "Filet mignon of pork with honey and mustard sauce", "details": "Potatoes shot and green beans"},
+          "crumble": {"title": "Crumble tomato pesto and creamy quinoa", "details": "Vegetarian"}
         },
         "dessertOptions": {
-          "chocolate": {"title": "Croquant framboise chocolat", "details": ""},
-          "none": {"title": "Aucun", "details": ""}
+          "chocolate": {"title": "Chocolate raspberry crunch", "details": ""},
+          "ananas": {"title": "Ananas with salty caramel", "details": ""}
         },
-        "submit": "S'inscrire"
-      }
+        "submit": "Register"
+      }, 
+      "submitted": "Your choice has been saved.",
+      "pay": "You can now pay the {total} € fee <a href=\"{link}\" target=\"_blank\">online</a>, or make a money transfer to 14445 004000 08101180019 13 (UNA / Caisse d'Epargne, Bretagne / Pays de la Loire)"
     },
     "mealsBooking": {
-      "title": "Reservation des repas",
-      "sponsor": "Fourni par CROUS",
+      "title": "Meals booking",
+      "sponsor": "Provided by CROUS",
       "forms": {
-        "name": "Nom, Prénom",
-        "phone": "Téléphone",
-        "mail": "E-mail",
-        "team": "Equipe / Délégation",
-        "quantity": "Quantité",
-        "saturdayLunch": "Samedi Midi",
-        "saturdayDinner": "Samedi Soir",
-        "sundayLunch": "Dimanche Soir",
+        "name": "First name, last name",
+        "phone": "Phone",
+        "mail": "Mail",
+        "team": "Team",
+        "quantity": "Amount",
+        "saturdayLunch": "Saturday Lunch",
+        "saturdayDinner": "Saturday Dinner",
+        "sundayLunch": "Sunday Dinner",
         "total": "Total",
-        "submit": "Reserver"
-      }
+        "submit": "Book"
+      }, 
+      "submitted": "Thanks for the booking! ",
+      "pay": "You can now pay the fee ({total} €) <a href=\"{link}\" target=\"_blank\">online</a>, or make a money transfer to  14445 004000 08101180019 13 (UNA / Caisse d'Epargne, Bretagne / Pays de la Loire)"
     },
     "teamsRegistration": {
-      "title": "Inscription des équipages",
+      "title": "Teams registration",
       "forms": {
-        "quantity": "Nombre",
-        "submit": "S'inscrire",
+        "quantity": "Number",
+        "submit": "Register",
         "section": {
-          "boats": "Equipages",
-          "club": "Identifants du club",
-          "contact": "Personne de contact",
-          "coaches": "Entraineurs, accompagnateurs",
-          "composition": "Composition des équipages"
+          "boats": "Teams",
+          "club": "Club identity",
+          "contact": "Contact person",
+          "coaches": "Coaches",
+          "composition": "Teams composition"
         },
         "club": {
-          "name": "Nom du club",
-          "address": "Adresse",
-          "link": "Lien (Site web, FB, Twitter...)",
-          "mail": "Mail du club"
+          "name": "Club name",
+          "address": "Address",
+          "link": "Link (Web site, FB, Twitter...)",
+          "mail": "Club mail"
         },
         "contact": {
-          "name": "Nom, Prénom",
-          "phone": "Téléphone",
-          "mail": "E-Mail"
+          "name": "First name, Last name",
+          "phone": "Phone",
+          "mail": "Mail"
         },
         "boats": {
-          "uniEight": "8+ Univ",
-          "uniQuad": "4x Univ",
-          "masterQuad": "4x Vétéran",
-          "masterFour": "4+ Vétéran (hommes)"
+          "uniEight": "Univ 8+",
+          "uniQuad": "Univ 4x",
+          "masterQuad": "Masters 4x",
+          "masterFour": "Masters 4+ (men)"
         },
         "composition": {
-          "name": "Nom, Prénom",
-          "birthdate": "jj/mm/aaaa",
+          "name": "Name",
+          "birthdate": "dd/mm/yyyy",
           "sex": {
             "f": "F",
-            "m": "H"
+            "m": "M"
           },
-          "licence": "Numéro de licence",
-          "noLicence": "Pas licencié"
+          "licence": "Licence number",
+          "noLicence": "No licence"
         }
-      }
+      }, 
+      "submitted": "Thank you for registration ! We will contact you shortly with the payment details!"
     },
     "volunteeringRegistration": {
-      "title": "Inscription au bénévolat",
+      "title": "Volunteering registration",
       "forms": {
-        "name": "Nom, Prénom",
-        "phone": "Téléphone",
-        "mail": "E-mail",
-        "volunteeringOptions": "Préférences d'équipes",
+        "name": "First name, Last Name",
+        "phone": "Phone",
+        "mail": "Mail",
+        "volunteeringOptions": "Team preferences",
         "volunteering": {
-          "hosting": {"title": "Accueil", "details": "Permanences au club vendredi, samedi et dimanche pour les renseignements et l'aide aux équipages. Anglais est un plus."},
-          "food": {"title": "Restauration", "details": "Gestion et service au stand de Restauration"},
-          "waterInstallation": {"title": "Installation/désinstallation des lignes d'eau", "details": "Lourde (mais très intéressante) tâche repartie sur la semaine avant le 5 mai, samedi soir et lundi 7 mai"},
-          "party": {"title": "Organisation de la soirée", "details": "Toutes les activités relatives à l'organisation et déroulement de la soirée de samedi"},
-          "onSite": {"title": "Stand du club", "details": "Animation du stand du club au village de la régate"},
-          "communityManager": {"title": "Communication", "details": "Publications en continu sur les réseaux sociaux de l'évènement et du club"},
-          "onWaterSecurity": {"title": "Sécurité sur l'eau", "details": "Gestion de navigation sur l'eau et du trafic sur le ponton"},
-          "driver": {"title": "Conducteur de navette", "details": "Chauffeur de la navette entre le lieu de la régate et le club et éventuellement Sam samedi soir"},
-          "launchDriver": {"title": "Pilote d'arbitres", "details": "Meilleure place pour assister aux courses"}
+          "hosting": {"title": "Hosting", "details": "Providing information to all regatta participants staying cosy at the boathouse"},
+          "food": {"title": "Food tent", "details": "Cooking and serving food to regatta participants"},
+          "waterInstallation": {"title": "Buoy lanes installation", "details": "Heavy and interesting task before (May 2-4), during (Saturday night) and after the event"},
+          "party": {"title": "Party logistics", "details": "All the activities related to the Saturday night party organization"},
+          "onSite": {"title": "Club tent", "details": "Being club ambassador at the regatta village"},
+          "communityManager": {"title": "Communication", "details": "Social network live publications"},
+          "onWaterSecurity": {"title": "Water security", "details": "On water marshalling and dock traffic management"},
+          "driver": {"title": "Van driver", "details": "Van driver travelling between regatta village and the boathouse. Maybe Saturday night after party."},
+          "launchDriver": {"title": "Referee driver", "details": "Best place to watch races (driving experience needed)"}
         },
-        "licencesOptions": "Permis détenus",
-        "licencesDetails": "Connaitre vos compétences nous permettra de vous trouver le poste le plus adapté",
+        "licencesOptions": "Licences",
+        "licencesDetails": "Knowing your skills will help us to offer you the best position",
         "licences": {
-          "driver": "Permis B (ou plus)",
-          "boat" : "Permis Bateau"
+          "driver": "Driver licence",
+          "boat" : "Boat licence"
         },
-        "availabilitiesOptions": "Disponibilités",
-        "availabilitiesDetails": "Nous avons besoins de vous pendant l'évènement, mais aussi avant et après l'évenement",
+        "availabilitiesOptions": "Avaliabilities",
+        "availabilitiesDetails": "We need you during the event, as well as before and after the event",
         "availabilities": {
-          "before": "Avant l'évènement (entre 1-4 mai)",
-          "fridayNight": "Vendredi soir",
-          "saturdayMorning": "Samedi matin (6h-13h)",
-          "saturdayAfternoon": "Samedi après-midi (12h30-18h30)",
-          "satudrayNight": "Samedi soir (19h-2h)",
-          "sundayMorning": "Dimanche matin (6h-13h)",
-          "sundayAfternoon": "Dimanche après-midi (12h30-18h30)",
-          "after": "Après l'évènement (7-8 mai)"
+          "before": "Before the event (May 1-4)",
+          "fridayNight": "Friday night (17:00-22:00)",
+          "saturdayMorning": "Saturday a.m. (6:00-13:00)",
+          "saturdayAfternoon": "Saturday p.m. (12:30-18:30)",
+          "satudrayNight": "Saturday night (19:00-2:00)",
+          "sundayMorning": "Sunday a.m. (6:00-13:00)",
+          "sundayAfternoon": "Sunday p.m. (12:30-18:30)",
+          "after": "Afer the event (Mai 7-8)"
         },
-        "comment": "Commentaires",
-        "submit": "S'inscrire"
-      }
+        "comment": "Comments",
+        "submit": "Register"
+      }, 
+      "submitted": "Thank you for registration. We will get back to you shortly!"
     }
-
   }
 }
