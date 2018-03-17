@@ -7,10 +7,11 @@
         <!-- <li class="live"><a href="/live/fr">En direct</a></li> -->
         <li><router-link :to="getLink('TeamsRegistration')">{{$t('message.menu.teamsRegistration')}}</router-link></li>
         <li><router-link :to="getLink('MealsBooking')">{{$t('message.menu.mealsBooking')}}</router-link></li>
-        <li><router-link :to="getLink('GalaRegistration')">{{$t('message.menu.galaRegistration')}}</router-link></li>
+        <!-- <li><router-link :to="getLink('GalaRegistration')">{{$t('message.menu.galaRegistration')}}</router-link></li> -->
         <li><router-link :to="getLink('VolunteeringRegistration')">{{$t('message.menu.volunteeringRegistration')}}</router-link></li>
+        <li><a href="#" @click="switchLang()" class="languageSwitch">{{$t('message.menu.changeLanguage')}}</a></li>
     </div>
-    <div class="label"><h1>Régate Universitaire Internationale d'Aviron</h1><h2>XXXIV Edition</h2><h3>Nantes, 5 et 6 Mai 2018</h3></div>
+    <div class="label"><h1>{{$t('message.page.title')}}</h1><h2>{{$t('message.page.subtitle')}}</h2><h3>{{$t('message.page.date')}}</h3></div>
     <div></div>
   </div>
   <div class="content">
@@ -18,7 +19,7 @@
   </div>
   <div class="part-end part">
     <div class="label"><div class="container">
-      <h2>Restez connectés</h2>
+      <h2>{{$t('message.page.stayConnected')}}</h2>
       <div class="social">
         <a class="new_window" href="https://www.facebook.com/Regataiades" title="Facebook Club Université Nantes Aviron (UNA)"><i class="fa fa-facebook-square fa-3"></i></a>
         <a class="new_window" href="https://twitter.com/regataiades" title="Twitter du Club Université Nantes Aviron (UNA)"><i class="fa fa-twitter-square fa-3"></i></a>
