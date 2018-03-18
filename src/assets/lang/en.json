@@ -100,7 +100,8 @@
             "m": "M"
           },
           "licence": "Licence number",
-          "noLicence": "No licence"
+          "noLicence": "No licence",
+          "comment": "Commentaires / Questions"
         }
       }, 
       "submitted": "Thank you for registration ! We will contact you shortly with the payment details!"
