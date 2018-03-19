@@ -101,9 +101,9 @@
             "m": "H"
           },
           "licence": "Numéro de licence",
-          "noLicence": "Pas licencié",
-          "comment": "Commentaires / Questions"
-        }
+          "noLicence": "Pas licencié"
+        },
+        "comment": "Commentaires / Questions"
       }, 
       "submitted": "Merci pour l'inscription ! On va revenir vers vous rapidement avec les détails de reglement !"
     },
