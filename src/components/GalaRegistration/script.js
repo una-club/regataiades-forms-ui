@@ -1,6 +1,6 @@
 import { saveData } from '../../business/commons.js'
 
-const price = 10.0
+const price = 15.0
 
 const service = 'registration/gala'
 
@@ -27,7 +27,7 @@ export default {
         ]
       },
       submitted: false
-      
+
     }
   },
   mounted () {
